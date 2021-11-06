@@ -1,11 +1,13 @@
 from flask import Flask, render_template
+from datetime import datetime
 
 webapp = Flask(__name__)
 
 
 @webapp.route("/")
 def index():
-    return render_template("index.html")
+    name = "Jörg"
+    return render_template("index.html", name=name, date=datetime.now())
 
 
 @webapp.route("/about")
