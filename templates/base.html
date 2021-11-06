@@ -4,16 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Heroku Flask Web App</title>
-	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
 </head>
 
 <body>
 	{% block header %}
-    <header id="main-header">
-		<div class="container">
-			<h1>My Website - BASE</h1>
-		</div>
-	</header>
 	{% endblock header %}
 	<nav id="navbar">
 		<div class="container">
@@ -26,33 +21,9 @@
 		</div>
 	</nav>
 	{% block section %}
-	<section id="showcase">
-		<div class="container">
-			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			</h1>
-		</div>
-	</section>
 	{% endblock section%}
 	{% block container %}
-	<div class="container">
-		<section id="main">
-			<h1>Welcome, {{name}}!</h1>
-			<p>Heute ist der {{ date }}!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</section>
-		<aside id="sidebar">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud </p>
-		</aside>
-	</div>
 	{% endblock container %}
-
 	<footer id="main-footer">
 		<p>Copyright &copy; 2021 My Website</p>
 	</footer>
