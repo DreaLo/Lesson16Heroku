@@ -1,0 +1,271 @@
+*{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+   margin: 0;
+}
+header {
+   box-shadow: 2px 1px 10px #888;
+   position: absolute;
+   background-color: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   text-align: left;
+   margin: 0px 0 0;
+   padding: 20px;
+   align-items: center;
+   width: -webkit-fill-available;
+}
+footer{
+   background-color: #fff;
+   text-align: left;
+   font-size: 0.8em;
+   color: #4267b2;
+   margin: 20px 0 0;
+   padding: 20px 40px;
+   box-shadow: 0px 1px 5px #999;
+}
+body {
+   background: linear-gradient(white, #8fb5cd) no-repeat;
+   color: #1c1e21;
+   font: normal 0.85em Roboto sans-serif;
+   margin: 0;
+   padding: 0;
+   float: none;
+   display: flow-root;
+   /*min-height: 100vh;*/
+}
+h1 {
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: #1877F2;
+    }
+
+h2{
+   text-align: center;
+   line-height: 1.1em;
+   color: #4267b2;
+   font-size: 3.5em;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin-top: 0px;
+}
+   .first-line{
+      font-weight: 100;
+      margin: 0px;
+}
+h3 {
+   text-align: center;
+   color: #4267b2;
+   font-size: 1.17em;
+}
+
+ul {
+   line-height: 1.8em;
+   padding: 10px;
+   list-style-type:none;
+   
+}
+ol {
+   line-height: 1.8em;
+   padding: 10px;
+}
+
+ol li {
+   background-color: #ECF3FF;
+   margin: inherit;
+   list-style-position: inside;
+   padding: 10px;
+}
+   
+ul li{
+   background-image: url(images/icons/check.png);
+   background-repeat: no-repeat;
+   background-position-y: 2px;
+   background-position-x: 0px;
+   margin: 20px 0;
+   padding: 0 0 0 30px ;
+}
+.box-1a #name {
+   background-image: url(http://simpleicon.com/wp-content/uploads/star.png);
+   background-size: 25px;
+   background-position: top left;
+   background-repeat: no-repeat;
+   color: #4267b2;
+}
+.box-1a #work {
+   background-image: url(http://simpleicon.com/wp-content/uploads/rocket.png);
+   background-size: 25px;
+   background-position: top left;
+   background-repeat: no-repeat;
+   color: #4267b2;
+}
+.box-1a #school {
+   background-image: url(http://simpleicon.com/wp-content/uploads/magic.png);
+   background-size: 25px;
+   background-position: top left;
+   background-repeat: no-repeat;
+   color: #4267b2;
+}
+
+/*Buttons*/
+
+button{
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 3px;
+      border: none;
+      color: #fff;
+      background-color:#4267b2;
+      padding: 15px;
+      font-size: 14px;
+      margin-bottom: 8px;
+      margin-top: 16px;
+      width: 252px;
+    }
+button:hover{
+       color: #1c1e21;
+       background-color: aliceblue;
+       transition: 1s;
+    }
+
+/*Container*/
+
+.container-stage{
+   display: flex;
+   width: 100vw;
+   margin: 100px 0 0;
+   justify-content: space-around;
+}
+.container-boxes{
+   margin: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: initial;
+   justify-content: center;
+}
+
+/*Boxes*/
+
+   .box-0{ 
+      text-align: center;
+      border-radius: 3px;
+      z-index: -1;
+      width: inherit;
+      min-height: 270px;
+      position: absolute;
+      background-color: #ECF3FF;
+     /* background-image: url(images/header.png);*/
+     background-image: url(https://images.unsplash.com/photo-1612021470627-ca1cb2d2ee92?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80);
+      background-repeat:no-repeat;
+  }
+   .box-1{
+      padding: 20px;
+      margin: 0px 10% 0;
+      text-align: center;
+      vertical-align: middle;
+      border-bottom: 1px #a54848 solid;
+   }
+      .box-1 article{
+         font-size: 0.85em;
+         line-height: 1.5em;
+      }
+   .box-1a{
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 30.3%;
+      background-color: #fff;
+      float: left;
+      margin: 14px;
+      padding: 15px;
+      box-sizing: border-box;
+      min-height: 390px;
+      border-radius: 4px;
+      box-shadow: 0px 6px 20px -10px rgb(104 104 104);
+   }
+   .box-2{
+      text-align: center;
+      padding: 0 108px ;
+    }
+   .box-round{    
+      box-shadow: 4px 4px 9px #999;
+      width: 200px;
+      height: 200px;
+      border: 4px #fff solid;
+      border-radius: 100%;
+      margin: 120px 30% 0;
+      flex:none;
+      background-image: url(https://icon-library.com/images/profile-photo-icon/profile-photo-icon-27.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #fff;
+    }
+
+/*content-elements*/
+.friends-list{
+   float: inherit;
+   border-bottom: #4267b2 1px solid;
+}
+.more {
+   color: #1c1e21;
+   display: block;
+   float: right;
+   margin: 10px 0 0 0;
+   border: 1px #4267b2 solid;
+   border-radius: 4px;
+   cursor: pointer;
+   padding: 10px 30px 10px 30px;
+   text-decoration: none;
+   }
+   .more:hover{
+      color: #fff;
+      background-color: #4267b2;
+      transition: 1s;
+   }
+.some-friends{
+   margin: 0 0 20px 0;
+   display: -webkit-inline-box;
+   float: left;
+   width: 100%;
+}
+   .some-friends a{
+      color: #4267b2;
+      padding: 20px;
+      margin-left: 10px;
+      float: right;
+   }
+   .some-friends a:hover{
+      color: #a54848;
+      text-decoration: underline;
+      transition: 30ms;
+   }
+   .some-friends img{
+      width: 60px;
+      height: 60px;
+      position: relative;
+   }
+/*Forms*/
+   .my-form{
+   border: 1px red solid;
+}
+    .inputs{
+      padding: 12px 12px 0 0 ;
+      float: right;
+    }
+    input{
+      padding: 12px 16px;
+    }
+    .inputtext{
+      color: #1c1e21;
+    }
+    .fleft{
+      float: left;
+    }
+    .fleft h1{
+      padding: 0 0 0 40px;
+    }
+    .fright{
+      float: right;
+      }
+
+/*Clear all*/
+      .clr {clear: both;}
