@@ -40,7 +40,8 @@ body{
 }
 
 #showcase{
-	background-image:url('static/img/showcase.jpg');
+	/*background-image:url(static/img/showcase.jpg);*/
+	background-color:#f4f4f4;
 	background-position:center right;
 	min-height:300px;
 	margin-bottom:30px;
