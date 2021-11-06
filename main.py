@@ -8,8 +8,8 @@ def index():
     return render_template("index.html")
 
 
-@webapp.route("/about_me")
-def about_me():
+@webapp.route("/about")
+def about():
     return render_template("about.html")
 
 
