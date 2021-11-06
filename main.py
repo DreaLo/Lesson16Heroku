@@ -23,12 +23,12 @@ def portfolio():
 
 @webapp.route("/portfolio/fakebook")
 def portfolio_fakebook():
-    return render_template("portfolio/fakebook.html")
+    return render_template("/portfolio/fakebook.html")
 
 
 @webapp.route("/portfolio/boogle")
 def portfolio_boogle():
-    return render_template("portfolio/boogle.html")
+    return render_template("/portfolio/boogle.html")
 
 
 # Press the green button in the gutter to run the script.
