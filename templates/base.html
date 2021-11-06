@@ -1,22 +1,38 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="de">
 
-    {% block header %}
-	<header id="main-header">
+<head>
+	<meta charset="UTF-8">
+	<title>Heroku Flask Web App</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+	{% block header %}
+    <header id="main-header">
 		<div class="container">
-			<h1>My Website - Home</h1>
+			<h1>My Website - BASE</h1>
 		</div>
 	</header>
 	{% endblock header %}
-
- 	{% block section %}
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/portfolio">Projects</a></li>
+				<!--<li><a href="#">Contact</a></li>-->
+			</ul>
+		</div>
+	</nav>
+	{% block section %}
 	<section id="showcase">
 		<div class="container">
-			<h1> Hello...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod!
+			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			</h1>
 		</div>
 	</section>
-	{% endblock section %}
-
+	{% endblock section%}
 	{% block container %}
 	<div class="container">
 		<section id="main">
@@ -36,3 +52,9 @@
 		</aside>
 	</div>
 	{% endblock container %}
+
+	<footer id="main-footer">
+		<p>Copyright &copy; 2021 My Website</p>
+	</footer>
+</body>
+</html>
