@@ -17,7 +17,8 @@ def about():
 
 @webapp.route("/portfolio")
 def portfolio():
-    return render_template("portfolio.html")
+    projects = ["Flask Project", "Fakebook", "Boogle"]
+    return render_template("portfolio.html", projects=projects)
 
 
 @webapp.route("/portfolio/fakebook")

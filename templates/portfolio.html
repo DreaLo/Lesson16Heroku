@@ -34,9 +34,16 @@
 	<div class="container">
 		<section id="main">
 			<h1>Projects</h1>
+
 			<ul>
-				<li><a href="templates/portfolio/fakebook.html">My fakebook</a></li>
-				<li><a href="templates/portfolio/boogle.html">Boogle</a></li>
+				{% for project in projects %}
+				<li>{{project}}</li>
+				{% endfor %}
+			</ul>
+
+			<ul>
+				<li><a href="/portfolio/fakebook.html">My fakebook</a></li>
+				<li><a href="/portfolio/boogle.html">Boogle</a></li>
 			</ul>
 
 		</section>
