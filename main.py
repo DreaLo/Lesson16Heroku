@@ -1,5 +1,5 @@
-from flask import Flask, render_template
 from datetime import datetime
+from flask import Flask, render_template, request
 
 webapp = Flask(__name__)
 
@@ -10,9 +10,22 @@ def index():
     return render_template("index.html", name=name, date=datetime.now())
 
 
-@webapp.route("/about")
+@webapp.route("/about", methods=["GET"])
 def about():
     return render_template("about.html")
+
+
+@webapp.route("/about", methods=["POST"])
+def contact():
+    contact_name = request.form.get("contact_name")
+    contact_email = request.form.get("contact_email")
+    contact_message = request.form.get("contact_message")
+
+    print(contact_name)
+    print(contact_email)
+    print(contact_message)
+
+    return render_template("success.html")
 
 
 @webapp.route("/portfolio")

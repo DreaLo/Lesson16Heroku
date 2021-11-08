@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+    {% block header %}
+	<header id="main-header">
+		<div class="container">
+			<h1>My Website - Success</h1>
+		</div>
+	</header>
+	{% endblock header %}
+
+	{% block section %}
+	<section id="showcase">
+		<div class="container">
+			<h1> Hi,{{ contact_name }}
+			</h1>
+		</div>
+	</section>
+	{% endblock section %}
+
+	{% block container %}
+	<h3>Success!</h3>
+	<p>Your message was successfully received. Thank you!</p>
+	{% endblock container%}

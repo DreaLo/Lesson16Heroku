@@ -17,6 +17,20 @@
 	</section>
 	{% endblock section %}
 
-	{% block container %}
+	 {%block container %}
+	<h3>Contact me</h3>
+		<form method="post" action="/contact">
+			<input type="text" name="contact_name" placeholder="Enter your name">
+			<br>
+
+			<input type="email" name="contact_email" placeholder="Enter email address">
+			<br>
+
+			<textarea name="contact_message" placeholder="Enter your message"></textarea>
+			<br>
+
+			<button type="submit">Submit</button>
+		</form>
+
 	{% endblock container%}
 
